@@ -24,9 +24,6 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-on-run-end:
-  - "{% if target.name == 'prod' %}{{ dbt_artifacts.upload_results(results) }}{% endif %}"
-
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -40,6 +37,5 @@ on-run-end:
 models:
   x_project:
     # Applies to all files under models/example/
-    example:
       +materialized: table
       +access: public
