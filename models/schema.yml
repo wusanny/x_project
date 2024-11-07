@@ -1,0 +1,10 @@
+version: 2
+
+models:
+    - name: stg_orders
+      description: staging table for orders
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests: 
+              - unique
