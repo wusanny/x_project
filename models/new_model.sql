@@ -1,1 +1,1 @@
-select 1 as neenee
+select * from {{ref('raw_payments')}}
