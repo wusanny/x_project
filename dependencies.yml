@@ -1,0 +1,6 @@
+packages:
+  - package: brooklyn-data/dbt_artifacts
+    version: 2.6.4
+
+projects:
+  - name: my_new_project
