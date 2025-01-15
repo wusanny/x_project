@@ -1,5 +1,8 @@
 {% macro get_warehouse(warehouse_size) %}
 
+{# check if the input warehouse size is valid #}
+    {% set valid_warehouse_sizes = ['xsmall', 'small', 'large'] %}
+
     {% if target.name.lower() in ['production', 'prod', 'production_ci'] %}
         {{ return('ANALYTICS') }}
 
