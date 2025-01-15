@@ -1,1 +1,1 @@
-select 1 as booboopotato
+select 1 as foo
