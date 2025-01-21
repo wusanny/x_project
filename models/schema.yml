@@ -6,7 +6,7 @@ models:
       config: 
         grants:
           +select: ['{%- if target.name == "dev_re" -%} tester
-                  {%- elif target.name == "prod" -%} sys_admin
+                  {%- elif target.name == "prod" -%} sysadmin
                   {%- endif -%}'
                   ]
     - name: foo
@@ -14,7 +14,7 @@ models:
       config: 
         grants:
           +select: ['{%- if target.name == "dev_re" -%} tester
-                  {%- elif target.name == "prod" -%} sys_admin
+                  {%- elif target.name == "prod" -%} sysadmin
                   {%- endif -%}'
                   ]
     - name: potato
@@ -22,6 +22,6 @@ models:
       config: 
         grants:
           +select: ['{%- if target.name == "dev_re" -%} tester
-                  {%- elif target.name == "prod" -%} sys_admin
+                  {%- elif target.name == "prod" -%} sysadmin
                   {%- endif -%}'
                   ]
