@@ -40,5 +40,10 @@ flags:
 models:
   x_project:
     # Applies to all files under models/example/
-      +materialized: table
-      +access: public
+      +materialized: view
+
+# flags: 
+#   warn_error_options:
+#     error: 
+#     - DeprecatedModel
+#     - DeprecatedReference

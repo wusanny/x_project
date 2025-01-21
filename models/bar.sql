@@ -1,1 +1,1 @@
-select 1 as foo
+select 1 as whylikedat

@@ -1,10 +1,27 @@
 version: 2
 
 models:
-    - name: stg_orders
-      description: staging table for orders
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests: 
-              - unique
+    - name: bar
+      description: "Items dimensional model aggregating data from multiple sources for a unified view of item details."
+      config: 
+        grants:
+          +select: ['{%- if target.name == "dev_re" -%} tester
+                  {%- elif target.name == "prod" -%} sys_admin
+                  {%- endif -%}'
+                  ]
+    - name: foo
+      description: "Items dimensional model aggregating data from multiple sources for a unified view of item details."
+      config: 
+        grants:
+          +select: ['{%- if target.name == "dev_re" -%} tester
+                  {%- elif target.name == "prod" -%} sys_admin
+                  {%- endif -%}'
+                  ]
+    - name: potato
+      description: "Items dimensional model aggregating data from multiple sources for a unified view of item details."
+      config: 
+        grants:
+          +select: ['{%- if target.name == "dev_re" -%} tester
+                  {%- elif target.name == "prod" -%} sys_admin
+                  {%- endif -%}'
+                  ]
