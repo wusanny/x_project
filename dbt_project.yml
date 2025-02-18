@@ -39,8 +39,8 @@ flags:
 
 models:
   x_project:
-    # Applies to all files under models/example/
-      +materialized: view
+    +materialized: view
+    +access: public
 
 # flags: 
 #   warn_error_options:
