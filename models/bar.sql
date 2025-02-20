@@ -1,1 +1,1 @@
-select 1 as whylikedat
+select 1 as itest
