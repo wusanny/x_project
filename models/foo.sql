@@ -1,1 +1,1 @@
-select 1 as goddamit
+select 1 as farout
