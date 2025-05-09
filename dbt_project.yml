@@ -35,7 +35,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 flags:
-  state_modified_compare_more_unrendered_values: True
+  state_modified_compare_more_unrendered_values: False
 
 models:
   x_project:
