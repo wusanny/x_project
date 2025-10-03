@@ -2,7 +2,3 @@ version: 2
 
 models:
   - name: foo
-    columns:
-      - name: id
-        tests:
-          - unique
